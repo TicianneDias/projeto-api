@@ -1,9 +1,16 @@
-import React from 'react'
+import React from 'react';
+import Nav from './components/Nav';
+import Home from './pages/Home';
+import Global from './styles/Global';
 
 const App = () => {
   return (
-    <div>Projeto API</div>
-  )
-}
+    <>
+      <Global />
+      <Home />
+      <Nav/>
+    </>
+  );
+};
 
-export default App
+export default App;
