@@ -76,6 +76,7 @@ export const OportunitiesItem = styled.div`
   width: 230px;
   height: 230px;
   border-radius: 20px;
+  cursor: pointer;
   
   h4, h5 {
     padding-left: 20px;

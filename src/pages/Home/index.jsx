@@ -55,14 +55,14 @@ const Home = () => {
           <h4>Portabilidade</h4>
           <h5>Até R$ {getTest.portabilityMaxValue}</h5>
         </OportunitiesItem>
-        <OportunitiesItem>
+        <OportunitiesItem style={{opacity:0.6, cursor:'no-drop'}}>
           <MoneyIcon>
             <RiExchangeDollarLine />
           </MoneyIcon>
           <br />
           <h4>Refinanciamento</h4>
         </OportunitiesItem>
-        <OportunitiesItem>
+        <OportunitiesItem style={{opacity:0.6, cursor:'no-drop'}}>
           <MoneyIcon>
             <BsCreditCard />
           </MoneyIcon>
