@@ -10,13 +10,20 @@ export const NavContainer = styled.div`
   position: fixed;
   bottom: 0;
   width: 100vw;
-`;
+
+  a {
+    text-decoration: none;
+    color: var(--color-black);
+  }
+
+  `;
 
 export const NavItem = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   cursor: pointer;
+
   .icon {
     font-size: 25px;
   }
@@ -25,7 +32,7 @@ export const NavItem = styled.div`
     font-size: 15px;
   }
 
-  &:hover {
+  &:hover{
     color: var(--color-pink-secundary);
   }
 `;
