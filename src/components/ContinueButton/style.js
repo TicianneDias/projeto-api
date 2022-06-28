@@ -16,6 +16,6 @@ export const Continue = styled.button`
   color: var(--color-white);
 
   &:hover {
-    border: 2px double  var(--color-pink-secundary);
+    border: 2px double var(--color-pink-secundary);
   }
 `;

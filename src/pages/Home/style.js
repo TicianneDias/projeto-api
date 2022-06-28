@@ -17,15 +17,13 @@ export const HomeUser = styled.div`
 
   h1 {
     font-size: 22px;
-
   }
   #credit {
     padding: 15px;
     color: var(--color-pink-primary);
     font-size: 30px;
-
   }
-  
+
   h2 {
     font-size: 18px;
     padding-top: 15px;
@@ -67,7 +65,6 @@ export const Oportunities = styled.div`
   justify-content: space-around;
   align-items: center;
   margin: 40px auto;
-  
 `;
 
 export const OportunitiesItem = styled.div`
@@ -77,17 +74,16 @@ export const OportunitiesItem = styled.div`
   height: 230px;
   border-radius: 20px;
   cursor: pointer;
-  
-  h4, h5 {
+
+  h4,
+  h5 {
     padding-left: 20px;
-    
   }
 
   h5 {
     color: var(--color-pink-secundary);
     padding-top: 20px;
   }
-
 `;
 
 export const MoneyIcon = styled.div`
