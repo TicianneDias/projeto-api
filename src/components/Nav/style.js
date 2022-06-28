@@ -7,6 +7,9 @@ export const NavContainer = styled.div`
   align-items: center;
   justify-content: space-around;
   height: 80px;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
 `;
 
 export const NavItem = styled.div`

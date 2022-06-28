@@ -1,13 +1,13 @@
 import React from 'react';
 import Nav from './components/Nav';
-import Values from './pages/Values';
+import Period from './pages/Period';
 import Global from './styles/Global';
 
 const App = () => {
   return (
     <>
       <Global />
-      <Values />
+      <Period />
       <Nav/>
     </>
   );
