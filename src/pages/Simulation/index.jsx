@@ -40,7 +40,7 @@ const Simulation = () => {
       </TextTop>
       <OptionsContainer>
         <OptionsTopContainer>
-          <img src={IMG} alt="" />
+          <img src={IMG} alt="Logo da Meu Tudo, como forma de simular empréstimo" />
           <Total>
             <h6>{getSimulation.numberOfInstallments} parcelas de</h6>
             <h3>R$ {getSimulation.installmentValue}</h3>
