@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
+import { ContinueContainer } from './style';
 import {
   ValuesContainer,
   ValuesItem,
   InputContainer,
-  ContinueContainer
-} from './style';
-import { TopContainer, TextTop } from '../../styles/CommunsStyle';
+  TopContainer,
+  TextTop
+} from '../../styles/CommunsStyle';
 import { IoIosArrowBack } from 'react-icons/io';
 import axios from 'axios';
 import ContinueButton from '../../components/ContinueButton';
@@ -64,7 +65,7 @@ const Values = () => {
         />
       </InputContainer>
       <ContinueContainer>
-      <ContinueButton />
+        <ContinueButton />
         <h5>
           <a href="">Simule pela parcela</a>
         </h5>
