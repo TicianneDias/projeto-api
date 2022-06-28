@@ -23,7 +23,13 @@ export const TopContainer = styled.div`
       position: absolute;
       font-size: 30px;
       left: 25px;
+      top: 32px;
       cursor: pointer;
+      color: var(--color-white);
+
+      a {
+        text-decoration: none;
+      }
 
       &:hover {
         color: var(--color-pink-secundary);
@@ -86,3 +92,24 @@ export const InputContainer = styled.div`
     margin-right: 20px;
   }
 `;
+
+export const Continue = styled.button`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 165px;
+  height: 40px;
+  background-color: var(--color-pink-primary);
+  border-radius: 40px;
+  padding: 20px 10px;
+  cursor: pointer;
+  margin: auto;
+  border: none;
+  color: var(--color-white);
+
+  &:hover {
+    border: 2px double var(--color-pink-secundary);
+  }
+`;
+

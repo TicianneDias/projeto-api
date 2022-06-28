@@ -40,20 +40,24 @@ const Home = () => {
       </HomeContainer>
       <Oportunities>
         <OportunitiesItem>
-          <MoneyIcon>
-            <RiMoneyDollarCircleLine />
-          </MoneyIcon>
-          <h4>Novo</h4>
-          <h4>empréstimo</h4>
-          <h5>Até R$ {getTest.newLoanMaxValue}</h5>
+          <a href="/Values">
+            <MoneyIcon>
+              <RiMoneyDollarCircleLine />
+            </MoneyIcon>
+            <h4>Novo</h4>
+            <h4>empréstimo</h4>
+            <h5>Até R$ {getTest.newLoanMaxValue}</h5>
+          </a>
         </OportunitiesItem>
         <OportunitiesItem>
-          <MoneyIcon>
-            <CgArrowsExchangeAltV />
-          </MoneyIcon>
-          <br />
-          <h4>Portabilidade</h4>
-          <h5>Até R$ {getTest.portabilityMaxValue}</h5>
+          <a href="/Values">
+            <MoneyIcon>
+              <CgArrowsExchangeAltV />
+            </MoneyIcon>
+            <br />
+            <h4>Portabilidade</h4>
+            <h5>Até R$ {getTest.portabilityMaxValue}</h5>
+          </a>
         </OportunitiesItem>
         <OportunitiesItem style={{ opacity: 0.6, cursor: 'no-drop' }}>
           <MoneyIcon>

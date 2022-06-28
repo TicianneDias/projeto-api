@@ -1,14 +1,17 @@
 import React from 'react';
 import Nav from './components/Nav';
-import Simulation from './pages/Simulation';
 import Global from './styles/Global';
+import { BrowserRouter } from 'react-router-dom';
+import AppRoutes from '../src/routes/AppRoutes';
 
 const App = () => {
   return (
     <>
       <Global />
-      <Simulation />
-      <Nav/>
+      <BrowserRouter>
+        <AppRoutes />
+      </BrowserRouter>
+      <Nav />
     </>
   );
 };

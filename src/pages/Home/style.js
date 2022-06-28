@@ -65,6 +65,12 @@ export const Oportunities = styled.div`
   justify-content: space-around;
   align-items: center;
   margin: 40px auto;
+
+  @media(max-width: 990px) {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
 `;
 
 export const OportunitiesItem = styled.div`
@@ -73,7 +79,13 @@ export const OportunitiesItem = styled.div`
   width: 230px;
   height: 230px;
   border-radius: 20px;
+  margin: 20px auto;
   cursor: pointer;
+
+  a {
+    text-decoration: none;
+    color: var(--color-black);
+  }
 
   h4,
   h5 {
@@ -83,6 +95,14 @@ export const OportunitiesItem = styled.div`
   h5 {
     color: var(--color-pink-secundary);
     padding-top: 20px;
+  }
+  
+  &:hover {
+    border: 1px dotted var(--color-pink-secundary);
+  }
+
+  @media(max-width: 990px) {
+    margin-bottom: 50px;
   }
 `;
 

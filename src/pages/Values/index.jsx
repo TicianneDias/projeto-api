@@ -5,11 +5,11 @@ import {
   ValuesItem,
   InputContainer,
   TopContainer,
-  TextTop
+  TextTop,
+  Continue
 } from '../../styles/CommunsStyle';
 import { IoIosArrowBack } from 'react-icons/io';
 import axios from 'axios';
-import ContinueButton from '../../components/ContinueButton';
 
 const Values = () => {
   const [getValues, setGetValues] = useState([]);
@@ -26,11 +26,18 @@ const Values = () => {
       });
   }, []);
 
+  const handleClick = e => {
+    e.preventDefault();
+    window.location.replace('/Period');
+  };
+
   return (
     <>
       <TopContainer>
         <div>
-          <IoIosArrowBack id="backItem" />
+          <a href="/">
+            <IoIosArrowBack id="backItem" />
+          </a>
           <h2>Valores</h2>
         </div>
       </TopContainer>
@@ -65,9 +72,11 @@ const Values = () => {
         />
       </InputContainer>
       <ContinueContainer>
-        <ContinueButton />
+        <Continue onClick={handleClick}>
+          <a>Continuar</a>
+        </Continue>
         <h5>
-          <a href="">Simule pela parcela</a>
+          <a href="/Period">Simule pela parcela</a>
         </h5>
       </ContinueContainer>
     </>
