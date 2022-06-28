@@ -5,8 +5,8 @@ export const NavContainer = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-justify-content: space-around;
-height: 80px;
+  justify-content: space-around;
+  height: 80px;
 `;
 
 export const NavItem = styled.div`
@@ -22,9 +22,7 @@ export const NavItem = styled.div`
     font-size: 15px;
   }
 
-  &:hover{
+  &:hover {
     color: var(--color-pink-secundary);
   }
-
-
 `;
