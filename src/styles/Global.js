@@ -20,8 +20,6 @@ export default createGlobalStyle`
   }
   body {
     background-color: var(--color-gray);
-    width: 100vw;
-    height: 100vh;
   }
   
 `;
