@@ -4,10 +4,10 @@ import {
   TextTop,
   InputContainer,
   ValuesContainer,
-  ValuesItem
+  ValuesItem,
+  Continue
 } from '../../styles/CommunsStyle';
 import { IoIosArrowBack } from 'react-icons/io';
-import ContinueButton from '../../components/ContinueButton';
 import axios from 'axios';
 
 const Period = () => {
@@ -27,11 +27,19 @@ const Period = () => {
       });
   }, []);
 
+  const handleClick = e => {
+    e.preventDefault();
+    window.location.replace('/Simulation');
+  };
+
   return (
     <>
       <TopContainer>
         <div>
+          <a href='/Values'>
+
           <IoIosArrowBack id="backItem" />
+          </a>
           <h2>Período</h2>
         </div>
       </TopContainer>
@@ -65,7 +73,9 @@ const Period = () => {
         />
         <h4>meses</h4>
       </InputContainer>
-      <ContinueButton />
+      <Continue onClick={handleClick}>
+        <a>Continuar</a>
+      </Continue>
     </>
   );
 };

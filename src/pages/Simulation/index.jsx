@@ -29,7 +29,9 @@ const Simulation = () => {
     <>
       <TopContainer>
         <div>
-          <IoIosArrowBack id="backItem" />
+          <a href="/Period">
+            <IoIosArrowBack id="backItem" />
+          </a>
           <h2>Opções</h2>
         </div>
       </TopContainer>
@@ -59,7 +61,7 @@ const Simulation = () => {
         </OptionsBottomContainer>
         <FinishContainer>
           <h5>
-            <a href="">Contratar</a>
+            <a href="/">Contratar</a>
           </h5>
           <IoIosArrowForward id="forwardIcon" />
         </FinishContainer>
