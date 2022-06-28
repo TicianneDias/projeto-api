@@ -65,7 +65,7 @@ const Period = () => {
         />
         <h4>meses</h4>
       </InputContainer>
-      <ContinueButton/>
+      <ContinueButton />
     </>
   );
 };
